@@ -38,7 +38,7 @@ const Hero = () => {
             alt="hero cover"
             className="w-full h-[450px] object-cover rounded-l-[48px]"
           />
-          <div className="flex justify-end -mt-5 pr-[325px]">
+          <div className="flex justify-end -mt-5 pr-[335px]">
             <motion.div
               whileHover={{ scale: 1.2 }}
               onHoverStart={(e) => {}}
@@ -46,7 +46,7 @@ const Hero = () => {
             >
               <a href="#explore">
                 <Button className="flex justify-center text-xl uppercase">
-                  Explore
+                  Skip
                 </Button>
               </a>
             </motion.div>

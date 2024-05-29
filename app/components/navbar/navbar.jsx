@@ -3,12 +3,22 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { IoMenu, IoClose } from "react-icons/io5";
+import Link from "next/link";
+
 import { ModeToggle } from "../ui/toggle-mode";
 import { Button } from "../ui/button";
-import menu from "../../../utils/menu.js";
-import NavItem from "./nav-item.jsx";
+import menu from "../../../utils/recipe-menu.js";
+import ListItem from "./list-item";
 import { navVariants } from "../../../utils/motion.js";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "../ui/navigation-menu.jsx";
 
 const Navbar = () => {
   const router = useRouter();
@@ -27,15 +37,46 @@ const Navbar = () => {
     <motion.nav variants={navVariants} initial="hidden" whileInView="show">
       <div className="flex justify-between items-center h-24 max-w-[1280px] mx-auto px-4">
         <h1 className="w-full text-3xl font-bold">NGOPILU.</h1>
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink
+                  className={navigationMenuTriggerStyle()}
+                  onClick={() => router.reload()}
+                >
+                  Home
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Recipe</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  {menu.map((menu) => (
+                    <ListItem
+                      key={menu.id}
+                      link={menu.link}
+                      title={menu.title}
+                      onClick={() => handleNav(menu.link)}
+                    >
+                      {menu.description}
+                    </ListItem>
+                  ))}
+                  <ListItem></ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/blog" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Blog
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
         <ul className="hidden md:flex items-center">
-          {menu.map((item) => (
-            <NavItem
-              key={item.id}
-              link={item.link}
-              title={item.title}
-              onClick={handleNav}
-            />
-          ))}
           <li className="p-4">
             <ModeToggle />
           </li>
@@ -43,28 +84,6 @@ const Navbar = () => {
             <Button className="p-4">Subscribe</Button>
           </li>
         </ul>
-        <div onClick={toggleNav} className="block md:hidden">
-          {nav ? <IoClose size={30} /> : <IoMenu size={30} />}
-        </div>
-        <div
-          className={
-            nav
-              ? "fixed top-3.5 left-0 w-[50%] h-full border-r ease-in-out duration-500"
-              : "fixed left-[-100%] top-3.5 ease-in-out duration-500"
-          }
-        >
-          <h1 className="w-full text-3xl font-bold m-4">NGOPILU.</h1>
-          <ul className="uppercase p-4 mt-8">
-            {menu.map((item) => (
-              <NavItem
-                key={item.id}
-                link={item.link}
-                title={item.title}
-                onClick={handleNav}
-              />
-            ))}
-          </ul>
-        </div>
       </div>
     </motion.nav>
   );
