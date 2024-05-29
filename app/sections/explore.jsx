@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { exploreRecipes } from "../components/utils/card.js";
-import { fadeIn, staggerContainer } from "../components/utils/motion.js";
+import { exploreRecipes } from "../../utils/card.js";
+import { fadeIn, staggerContainer } from "../../utils/motion.js";
 import { TypingText } from "../components/custom-effect/text.jsx";
 import { ExploreCard } from "../components/custom-effect/explore-card.jsx";
 

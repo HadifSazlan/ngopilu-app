@@ -6,7 +6,7 @@ import {
   slideIn,
   staggerContainer,
   textVariant,
-} from "../components/utils/motion.js";
+} from "../../utils/motion.js";
 
 const Hero = () => {
   return (

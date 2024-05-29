@@ -1,5 +1,5 @@
-import "./globals.css";
-import { ThemeProvider } from "./components/theme-provider/theme.jsx";
+import "../styles/globals.css";
+import { ThemeProvider } from "../theme-provider/theme.jsx";
 
 export const metadata = {
   title: "Ngopilu.",

@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { ModeToggle } from "../ui/toggle-mode";
 import { Button } from "../ui/button";
-import menu from "../utils/menu";
+import menu from "../../../utils/menu.js";
 import NavItem from "./nav-item.jsx";
-import { navVariants } from "../utils/motion";
+import { navVariants } from "../../../utils/motion.js";
 
 const Navbar = () => {
   const router = useRouter();
