@@ -5,5 +5,5 @@ export default function Recipe() {
     <main>
       <Navbar />
     </main>
-  )
+  );
 }
