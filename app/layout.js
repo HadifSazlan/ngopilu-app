@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "../theme-provider/theme.jsx";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: "Ngopilu.",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeProvider attribute="class" defaultTheme="system">
           {children}
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
