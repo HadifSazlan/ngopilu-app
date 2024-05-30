@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "../ui/button.jsx";
-import { fadeIn } from "../../../utils/motion.js";
+import { fadeIn } from "../../utils/motion.js";
 
 export const ExploreCard = ({
   id,

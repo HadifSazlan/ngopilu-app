@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../../utils/motion.js";
-import { TypingText } from "../components/custom-effect/text.jsx";
+import { TypingText } from "../../components/custom-effect/text.jsx";
 
 const About = () => {
   return (

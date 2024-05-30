@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion.js";
-import { Button } from "../components/ui/button.jsx";
-import { Input } from "../components/ui/input.jsx";
+import { Button } from "../../components/ui/button.jsx";
+import { Input } from "../../components/ui/input.jsx";
 
 const Footer = () => {
   return (

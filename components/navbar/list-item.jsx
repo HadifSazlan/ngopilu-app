@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "../../../lib/utils.js";
+import { cn } from "../../lib/utils.js";
 import { NavigationMenuLink } from "../ui/navigation-menu.jsx";
 
 const ListItem = React.forwardRef(

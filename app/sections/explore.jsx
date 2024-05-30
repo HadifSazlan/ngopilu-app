@@ -4,8 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { exploreRecipes } from "../../utils/card.js";
 import { fadeIn, staggerContainer } from "../../utils/motion.js";
-import { TypingText } from "../components/custom-effect/text.jsx";
-import { ExploreCard } from "../components/custom-effect/explore-card.jsx";
+import { TypingText } from "../../components/custom-effect/text.jsx";
+import { ExploreCard } from "../../components/custom-effect/explore-card.jsx";
 
 const Explore = () => {
   const [active, setActive] = useState("method-2");
