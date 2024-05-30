@@ -38,7 +38,7 @@ const Hero = () => {
             alt="hero cover"
             className="w-full h-[450px] object-cover rounded-l-[48px]"
           />
-          <div className="flex justify-end -mt-5 pr-[335px]">
+          <div className="flex justify-end -mt-5 pr-[310px]">
             <motion.div
               whileHover={{ scale: 1.2 }}
               onHoverStart={(e) => {}}

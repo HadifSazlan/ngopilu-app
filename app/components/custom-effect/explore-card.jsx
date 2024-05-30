@@ -16,7 +16,7 @@ export const ExploreCard = ({
     variants={fadeIn("right", "spring", index * 0.5, 1.5)}
     className={`relative ${
       active === id ? "flex-[10]" : "flex-[2]"
-    } flex items-center justify-center min-w-44 h-[700px] ease-out duration-300 cursor-pointer`}
+    } flex items-center justify-center min-w-44 h-[700px] ease-out duration-300 overflow-hidden cursor-pointer`}
     onClick={() => handleClick(id)}
   >
     <img

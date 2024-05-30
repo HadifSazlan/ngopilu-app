@@ -76,14 +76,9 @@ const Navbar = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <ul className="hidden md:flex items-center">
-          <li className="p-4">
-            <ModeToggle />
-          </li>
-          <li href="subscribe">
-            <Button className="p-4">Subscribe</Button>
-          </li>
-        </ul>
+        <NavigationMenuItem className="hidden md:flex items-center pl-1">
+          <ModeToggle />
+        </NavigationMenuItem>
       </div>
     </motion.nav>
   );

@@ -31,7 +31,7 @@ const Explore = () => {
             Select your favored method
           </span>
         </motion.p>
-        <div className="mt-12 flex flex-row gap-4">
+        <div className="w-full mt-12 flex flex-row gap-4">
           {exploreRecipes.map((method, index) => (
             <ExploreCard
               key={method.id}
