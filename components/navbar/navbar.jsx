@@ -27,7 +27,12 @@ const Navbar = () => {
   };
 
   return (
-    <motion.nav variants={navVariants} initial="hidden" whileInView="show">
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <div className="flex justify-between items-center h-24 max-w-[1280px] mx-auto px-4">
         <h1 className="w-full text-3xl font-bold">NGOPILU.</h1>
         <NavigationMenu>
@@ -56,7 +61,6 @@ const Navbar = () => {
                       {menu.description}
                     </ListItem>
                   ))}
-                  <ListItem></ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>

@@ -16,7 +16,7 @@ const Explore = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className="max-w-[1280px] mx-auto flex flex-col"
       >
         <TypingText

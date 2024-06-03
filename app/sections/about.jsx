@@ -11,7 +11,7 @@ const About = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className="max-w-[1280px] py-16 mx-auto flex justify-center items-center flex-col"
       >
         <TypingText

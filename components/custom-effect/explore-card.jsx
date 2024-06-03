@@ -30,7 +30,7 @@ export const ExploreCard = ({
       </h3>
     ) : (
       <div className="absolute bottom-0 p-8 w-full bg-[rgba(0,0,0,0.5)] rounded-b-xl">
-        <Button className="max-w-24">View Recipe</Button>
+        <Button className="max-w-24">View</Button>
         <h2 className="mt-2 font-semibold text-3xl text-white">{title}</h2>
       </div>
     )}

@@ -12,7 +12,7 @@ const Footer = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className="mt-16 py-12 flex justify-center items-center mx-auto flex-col border-8 rounded-3xl border-orange-500"
       >
         <h1 className="mt-1 text-2xl font-bold uppercase">
