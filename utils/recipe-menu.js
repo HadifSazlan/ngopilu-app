@@ -1,4 +1,4 @@
-const components = [
+const menu = [
   {
     title: "French Press",
     description:
@@ -31,4 +31,4 @@ const components = [
   },
 ];
 
-export default components;
+export default menu;
