@@ -25,7 +25,7 @@ export const ExploreCard = ({
       className="absolute w-full h-full object-cover rounded-xl"
     />
     {active !== id ? (
-      <h3 className="font-semibold text-3xl w-full absolute bottom-24 rotate-[-90deg] origin-[0,0] text-white ">
+      <h3 className="absolute w-full font-semibold text-lg p-8 md:p-0 md:mb-20 md:text-3xl md:bottom-6 md:rotate-[-90deg] md:origin-[0,0] text-white ">
         {title}
       </h3>
     ) : (

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "../../components/ui/button.jsx";
 import {
   slideIn,
   staggerContainer,
@@ -21,13 +20,13 @@ const Hero = () => {
         <div className="flex flex-col justify-center items-center">
           <motion.h1
             variants={textVariant(1.1)}
-            className="hover:italic font-bold uppercase text-9xl"
+            className="hover:italic font-bold uppercase text-6xl md:text-9xl"
           >
             Brew
           </motion.h1>
           <motion.div
             variants={textVariant(1.2)}
-            className="hover:italic font-bold uppercase text-9xl"
+            className="hover:italic font-bold uppercase text-6xl md:text-9xl"
           >
             <h1 className="">Alchemy</h1>
           </motion.div>
@@ -36,19 +35,8 @@ const Hero = () => {
           <img
             src="/cover.png"
             alt="hero cover"
-            className="w-full h-[450px] object-cover rounded-l-[48px]"
+            className="w-full h-[350px] md:h-[520px] object-cover rounded-l-[34px] md:rounded-l-[48px]"
           />
-          <div className="flex justify-end -mt-5 pr-[310px]">
-            <motion.div
-              whileHover={{ scale: 1.2 }}
-            >
-              <a href="#explore">
-                <Button className="flex justify-center text-xl uppercase">
-                  Skip
-                </Button>
-              </a>
-            </motion.div>
-          </div>
         </motion.div>
       </motion.div>
     </section>

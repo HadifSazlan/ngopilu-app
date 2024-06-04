@@ -16,24 +16,22 @@ const About = () => {
       >
         <TypingText
           title="# About"
-          textStyles="text-2xl font-bold uppercase"
+          textStyles="text-xl md:text-2xl font-bold uppercase"
         />
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="text-2xl mt-2 text-center"
+          className="px-6 text-base md:px-0 md:text-2xl mt-2 text-center"
         >
-          <span className="font-extrabold uppercase">Ngopilu.</span> is your
-          go-to for the finest filtered coffee recipes. Whether you're a
-          seasoned barista or a home brewer, you can elevate your coffee game
-          with our expertly curated methods. Experience the essence of coffee
-          craftsmanship Using only premium beans and techniques, brew the
-          perfect cup and make your daily routine a delightful ritual.
+          <span className="font-extrabold uppercase">Ngopilu.</span> Your easy
+          guide to great filtered coffee. Sharing simple methods used by many to
+          help you brew amazing coffee. Perfect for home brewing. Make coffee
+          time a daily joy!
         </motion.p>
         <motion.p
           variants={fadeIn("up", "tween", 0.4, 1)}
-          className="text-2xl mt-2 text-center"
+          className="px-2 text-base md:text-2xl mt-2 text-center"
         >
-          Let's explore the art of coffee brewing by scrolling down
+          Let's explore the art of coffee brewing
         </motion.p>
         <motion.img
           variants={fadeIn("up", "tween", 0.6, 1)}

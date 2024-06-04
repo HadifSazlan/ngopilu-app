@@ -11,7 +11,7 @@ const Explore = () => {
   const [active, setActive] = useState("method-2");
 
   return (
-    <section id="explore">
+    <section>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -21,17 +21,17 @@ const Explore = () => {
       >
         <TypingText
           title="# Recipe"
-          textStyles="text-2xl font-bold uppercase text-center"
+          textStyles="text-xl md:text-2xl font-bold uppercase text-center"
         />
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="text-2xl mt-2 text-center"
+          className="mt-2 text-center"
         >
-          <span className="text-2xl mt-2 text-center">
+          <span className="text-base md:text-2xl">
             Select your favored method
           </span>
         </motion.p>
-        <div className="w-full mt-12 flex flex-row gap-4">
+        <div className="w-full mt-12 flex md:flex-row flex-col min-h-[70vh] gap-2 md:gap-4">
           {exploreRecipes.map((method, index) => (
             <ExploreCard
               key={method.id}
